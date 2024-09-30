@@ -1,10 +1,11 @@
 import Header from './Header.jsx'
+import LogoImg from './assets/eco-5465429_640.png'
 
 function App() {
 
   return(
     <>
-    <Header/>
+    <Header LogoImg={LogoImg}/>
     </>
   );
 }
