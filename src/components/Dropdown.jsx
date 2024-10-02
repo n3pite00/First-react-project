@@ -12,22 +12,6 @@ function Products(){
         setindex(event.target.value)
     }
 
-    const [count, setCount] = useState(0)
-
-    function MinusCount() {
-        setCount(prevCount => {
-            if (prevCount > 0) {
-                return prevCount - 1
-            }
-            return prevCount
-        })
-    
-    }
-
-    function PlusCount() {
-        setCount(prevCount => prevCount + 1)
-    }
-
     return(
     <>
         <h2>Select product:</h2>
@@ -36,11 +20,6 @@ function Products(){
             <option value="Select product">Select product</option>
             
         </select>
-
-        <p>Quantity:</p>
-        <button onClick={MinusCount}>-</button>
-        <span>{count}</span>
-        <button onClick={PlusCount}>+</button>
     </>
     )
 }
