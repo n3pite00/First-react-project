@@ -12,14 +12,36 @@ function Products(){
         setindex(event.target.value)
     }
 
+    const [count, setCount] = useState(0)
+
+    function MinusCount() {
+        setCount(prevCount => {
+            if (prevCount > 0) {
+                return prevCount - 1
+            }
+            return prevCount
+        })
+    
+    }
+
+    function PlusCount() {
+        setCount(prevCount => prevCount + 1)
+    }
+
     return(
-    <div>
-        <h2>Select product</h2>
+    <>
+        <h2>Select product:</h2>
+        <p>Product</p>
         <select onChange={HandleProductChange}>
             <option value="Select product">Select product</option>
             
         </select>
-    </div>
+
+        <p>Quantity:</p>
+        <button onClick={MinusCount}>-</button>
+        <span>{count}</span>
+        <button onClick={PlusCount}>+</button>
+    </>
     )
 }
 
