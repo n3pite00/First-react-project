@@ -1,8 +1,9 @@
 import '../styles/info.css'
 
-function ProductionInfo() {
 
-    
+
+function ProductionInfo({ Selectedproduct, Selectedprice, count}) {
+    const total = count * Selectedprice
 
     return(
     <>
@@ -14,9 +15,9 @@ function ProductionInfo() {
                 <th>Total</th>
             </tr>
             <tr>
-                <th></th>
-                <th></th>
-                <th></th>
+                <td>{Selectedproduct}</td>
+                <td>{count}</td>
+                <td>{total}</td>
             </tr>
         </table>
     </>

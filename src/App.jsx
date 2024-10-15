@@ -4,14 +4,15 @@ import Products from './components/Dropdown.jsx'
 import Quantity from './components/Quantity.jsx'
 import ProductionInfo from './components/info.jsx'
 
+
 function App() {
 
   return(
   <>
-    <Header LogoImg={LogoImg}/>
-    <Products/>
-    <Quantity/>
-    <ProductionInfo/>
+      <Header LogoImg={LogoImg}/>
+      <Products/>
+      <Quantity/>
+      <ProductionInfo/>
   </>
   );
 }
