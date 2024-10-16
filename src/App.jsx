@@ -11,8 +11,6 @@ function App() {
   <>
       <Header LogoImg={LogoImg}/>
       <Products/>
-      <Quantity/>
-      <ProductionInfo/>
   </>
   );
 }

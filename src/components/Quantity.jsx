@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 function Quantity () {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0)
 
     function MinusCount() {
         setCount(prevCount => {

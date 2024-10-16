@@ -1,5 +1,6 @@
 import { useState } from "react"
 import ProductionInfo from "./info"
+import Quantity from "./Quantity.jsx"
 
 
 function Products(){
@@ -8,12 +9,14 @@ function Products(){
     const price = [649, 399, 349, 449]  
 
     const [selected, setindex] = useState(0)
+    const [count, setCount] = useState(0)
 
     const product = productNames[selected]
     const Newprice = price[selected]
 
     const HandleProductChange = (event) => {
         setindex(event.target.value)
+        
     }
 
     return(
@@ -28,7 +31,8 @@ function Products(){
         ))}
         </select>
 
-        <ProductionInfo Selectedproduct={product} Selectedprice={Newprice} />
+        <Quantity count={count} setCount={setCount} />
+        <ProductionInfo Selectedproduct={product} Selectedprice={Newprice} count={count}/>
         
     </>
     )
