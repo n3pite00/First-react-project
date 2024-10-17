@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Axios from "axios"
+import "../styles/cocktailStyle.css"
 
 function Cocktail() {
 
@@ -13,12 +14,12 @@ function Cocktail() {
     })
     }
     return (
-        <>
+    <div className="container">
         <h1> Generate a Random Cocktail!</h1>
         <button onClick = {generate}> Cocktail! </button>
         <h2>{info.strDrink}</h2>
         <p>{info.strInstructions}</p>
-        </>
+    </div>
     )
 }
 
