@@ -1,5 +1,8 @@
 # Nettisivusto
-[Nettisivu](https://www.students.oamk.fi/~n3pite00/dist/)
+
+## Huom! Paina joko Products tai Cocktail linkkiä jotta toiminnallisuudet tulevat näkyviin
+
+[Nettisivusto](https://www.students.oamk.fi/~n3pite00/dist/)
 
 
 # React + Vite
