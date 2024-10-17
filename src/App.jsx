@@ -1,16 +1,31 @@
-import Header from './components/Header.jsx'
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import Header from './components/Header'
 import LogoImg from './assets/eco-5465429_640.png'
+import Cocktail from './component/Cocktail.jsx'
 import Products from './components/Dropdown.jsx'
-
+import './styles/navbar.css'
 
 function App() {
 
-  return(
-  <>
-      <Header LogoImg={LogoImg}/>
-      <Products/>
-  </>
-  );
+  return (
+    <Router>
+      <Header LogoImg={LogoImg} />
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Products</Link>
+          </li>
+          <li>
+            <Link to="/cocktail">Cocktail</Link>
+          </li>
+        </ul>
+        <Routes>
+          <Route path="/" element={<Products />} />
+          <Route path="/cocktail" element={<Cocktail />} />
+        </Routes>
+      </nav>
+    </Router>
+  )
 }
 
 export default App
