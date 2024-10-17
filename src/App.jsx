@@ -1,12 +1,14 @@
-import React from 'react'
-import Cocktail from './component/Cocktail.jsx'
+import Header from './components/Header.jsx'
+import LogoImg from './assets/eco-5465429_640.png'
+import Products from './components/Dropdown.jsx'
 
 
 function App() {
 
   return(
   <>
-      <Cocktail />
+      <Header LogoImg={LogoImg}/>
+      <Products/>
   </>
   );
 }
