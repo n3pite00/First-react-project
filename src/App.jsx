@@ -1,5 +1,5 @@
 import React from 'react'
-import Cocktail from './component/Cocktail.jsx'
+import Cocktail from './components/Cocktail.jsx'
 
 function App() {
   return (
