@@ -3,6 +3,7 @@ import Header from './components/Header'
 import LogoImg from './assets/eco-5465429_640.png'
 import Cocktail from './components/Cocktail.jsx'
 import Products from './components/Dropdown.jsx'
+import Search from './components/search.jsx'
 import './styles/navbar.css'
 
 function App() {
@@ -23,6 +24,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Products />} />
           <Route path="/cocktail" element={<Cocktail />} />
+            <>
+              <Search />
+              <Cocktail />
+            </>
         </Routes>
     </Router>
   )
