@@ -23,11 +23,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<Products />} />
-          <Route path="/cocktail" element={<Cocktail />} />
-            <>
-              <Search />
-              <Cocktail />
-            </>
+          <Route path="/cocktail" element={<><Search /><Cocktail /></>} />
         </Routes>
     </Router>
   )
